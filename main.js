@@ -67,3 +67,43 @@ const miguel = new Student2(
 		]
 	}
 );
+
+// Ventajas Poo
+
+class Student3 {
+	constructor({
+		name,
+		email,
+		username,
+		twitter = undefined,
+		instagram = undefined,
+		facebook = undefined,
+		approvedCourses = [],
+		learningPaths = []
+	}) {
+		this.name=name
+		this.email=email
+		this.username=username
+		this.socialMedia = {
+			twitter,
+			instagram,
+			facebook
+		},
+		this.approvedCourses = approvedCourses
+		this.learningPaths = learningPaths
+	}
+}
+
+const juan2 = new Student3({
+	name: "JuanDC",
+	username: "juandc",
+	email: "juanito@juanito.com",
+	twitter: "fjuandc"
+})
+
+const migueln = new Student3({
+	name: "Miguelito",
+	username: "migulexdf",
+	email: "miguel@juanito.com",
+	twitter: "amigules"
+})
