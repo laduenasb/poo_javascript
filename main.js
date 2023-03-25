@@ -106,7 +106,7 @@ const cursoProbaBasica = new Course({
 	name: "Curso Gratis de Programación Básica"
 })
 
-const escuelaWeb = LearningPath({
+const escuelaWeb = new LearningPath({
 	name: "Escuela de Desarrollo Web",
 	courses: [
 		"Curso Definitivo de HTML y CSS",
@@ -115,7 +115,7 @@ const escuelaWeb = LearningPath({
 })
 
 
-const escuelaData = LearningPath({
+const escuelaData = new LearningPath({
 	name: "Escuela de Data Science",
 	courses: [
 		"Curso DataBusiness",
