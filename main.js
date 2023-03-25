@@ -70,6 +70,47 @@ const miguel = new Student2(
 
 // Ventajas Poo
 
+class LearningPath {
+	constructor({
+		name,
+		courses
+	}){
+		this.name=name
+		this.courses=courses
+	}
+}
+
+class Course {
+	constructor({
+		name,
+		classes = []
+	}) {
+		this.name=name
+		this.classes=classes
+	}
+}
+
+const cursoProbaBasica = new Course({
+	name: "Curso Gratis de Programación Básica"
+})
+
+const escuelaWeb = LearningPath({
+	name: "Escuela de Desarrollo Web",
+	courses: [
+		"Curso Definitivo de HTML y CSS",
+		"Curso Práctico de HTML y CSS"
+	]
+})
+
+
+const escuelaData = LearningPath({
+	name: "Escuela de Data Science",
+	courses: [
+		"Curso DataBusiness",
+		"Curso Dataviz"
+	]
+})
+
 class Student3 {
 	constructor({
 		name,
